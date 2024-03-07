@@ -1,13 +1,13 @@
-function generateRandomNum() {
+function genRandomNumber() {
     return Math.floor(Math.random() * 100);
 }
 
 function getComputerChoice() {
-    if (generateRandomNum() <= 33) {
+    if (genRandomNumber() <= 33) {
         return `rock`;
-    } else if (generateRandomNum() <= 66) {
+    } else if (genRandomNumber() <= 66) {
         return `paper`;
-    } else if (generateRandomNum() <= 99) {
+    } else if (genRandomNumber() <= 99) {
         return `scissors`;
     }
 }
