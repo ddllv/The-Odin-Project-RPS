@@ -55,7 +55,7 @@ rock vs rock = tie
 scissors vs scissors = tie
 */
 
-const playerSelection = prompt(`What's your choice? Rock, Paper, or Scissors?`); // Player's choice.
+const playerSelection = prompt(`What's your choice? Rock, Paper, or Scissors?`).toLowerCase(); // Player's choice.
 const computerSelection = getComputerChoice(); // Computer's choice.
 
-console.log(playRockPaperScissors(playerSelection.toLowerCase(), computerSelection));
+console.log(playRockPaperScissors(playerSelection, computerSelection));
