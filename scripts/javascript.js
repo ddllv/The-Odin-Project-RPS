@@ -29,7 +29,6 @@ function playRockPaperScissors(playerSelection, computerSelection) {
         return `Computer wins! (Player: ${playerSelection}, Computer: ${computerSelection})`;
     }
 
-    // ELSE replaces the following code:
     // if (
     //     (playerSelection === `paper` && computerSelection === `scissors`) ||
     //     (playerSelection === `rock` && computerSelection === `paper`) ||
@@ -56,7 +55,7 @@ rock vs rock = tie
 scissors vs scissors = tie
 */
 
-const playerSelection = `paper`; // Player's choice.
+const playerSelection = prompt(`What's your choice? Rock, Paper, or Scissors?`); // Player's choice.
 const computerSelection = getComputerChoice(); // Computer's choice.
 
 console.log(playRockPaperScissors(playerSelection.toLowerCase(), computerSelection));
